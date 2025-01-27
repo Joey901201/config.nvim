@@ -25,6 +25,17 @@ require("lazy").setup({
 		enabled = true,
 		notify = false,
 	},
+	performance = {
+		rtp = {
+			disabled_plugins = {
+				"gzip",
+				"tarPlugin",
+				"tohtml",
+				"tutor",
+				"zipPlugin",
+			},
+		},
+	},
 })
 
 require("config.keymaps")
