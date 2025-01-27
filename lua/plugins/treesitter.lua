@@ -1,9 +1,30 @@
 return {
-    {
-        "nvim-treesitter/nvim-treesitter",
-	    build = ":TSUpdate",
-	    config = function ()
-		    require("config.treesitter")
-	    end,
-    },
- }
+	{
+		"nvim-treesitter/nvim-treesitter",
+		build = ":TSUpdate",
+		event = { "BufReadPost", "BufNewFile", "VeryLazy" },
+		cmd = { "TSBufEnable", "TSBufDisable", "TSUpdate", "TSInstall", "TSModuleInfo" },
+		opts = {
+			highlight = { enable = true },
+			indent = { enable = true },
+			ensure_installed = {
+				"bash",
+				"c",
+				"diff",
+				"go",
+				"javascript",
+				"lua",
+				"luadoc",
+				"markdown",
+				"markdown_inline",
+				"make",
+				"printf",
+				"python",
+				"query",
+				"rust",
+				"vim",
+				"vimdoc",
+			},
+		},
+	},
+}

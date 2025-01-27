@@ -11,6 +11,8 @@ opt.expandtab = true
 opt.fillchars = {
 	eob = " ",
 }
+opt.foldmethod = "expr"
+opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
 opt.ignorecase = true
 opt.inccommand = "nosplit"
 opt.laststatus = 3
