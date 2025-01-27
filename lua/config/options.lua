@@ -3,7 +3,7 @@ vim.g.maplocalleader = "//"
 
 local opt = vim.opt
 
-opt.clipboard = "unnamedplus"
+opt.clipboard = vim.env.SSH_TTY and "" or "unnamedplus"
 opt.completeopt = "menu,menuone,noselect"
 opt.cursorline = true
 opt.cursorlineopt = "number"
