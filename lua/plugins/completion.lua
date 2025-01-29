@@ -3,8 +3,10 @@ return {
 		"saghen/blink.cmp",
 		dependencies = {
 			"rafamadriz/friendly-snippets",
+			"mini.icons",
 		},
 		version = "*",
+		event = "InsertEnter",
 		opts = {
 			keymap = { preset = "super-tab" },
 			appearance = {

@@ -2,11 +2,7 @@ return {
 	{
 		"stevearc/oil.nvim",
 		dependencies = {
-			"echasnovski/mini.nvim",
-			version = "*",
-			config = function()
-				require("mini.icons").setup()
-			end,
+			"mini.icons",
 		},
 		opts = {
 			keymaps = {

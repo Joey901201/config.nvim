@@ -9,6 +9,8 @@ return {
 			integrations = {
 				blink_cmp = true,
 				fidget = true,
+				flash = true,
+				gitsigns = true,
 				mason = true,
 				mini = {
 					enabled = true,
@@ -25,9 +27,7 @@ return {
 				},
 				treesitter = true,
 				snacks = true,
-				telescope = {
-					enabled = true,
-				},
+				which_key = true,
 			},
 		},
 	},
